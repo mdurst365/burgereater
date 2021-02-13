@@ -1,20 +1,38 @@
-li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
-  
+body {
+  background-color:#272b27;
+}
+
+.welcome {
+  margin: auto;
+  padding: 2%;
+  width: 80%;
+  background-color: #3e7a50;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  color:white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.order {
+  margin: auto;
+  padding: 2%;
+  width:80%;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.orderup {
+  margin: auto;
+  padding: 2%;
+  width:80%;
+  text-align: center;
+  background-color: #f09d29;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

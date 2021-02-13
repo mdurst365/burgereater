@@ -1,26 +1,28 @@
-<h1>Welcome to Eat the Burger</h1>
+<div class="welcome">
+  <h1>Welcome to Eat the Burger</h1>
+</div>
 
+<div class="order">
 <h2>May I take your order?</h2>
+
+
 <form class="create-form">
 
-  <div class="form-group">
-    <label for="order">Burger Name:</label>
-    <input type="text" id="order" name="name">
-  </div>
+     <form id="addBurgerForm">
+        <input type="text" id="add-burger" placeholder="Enter a burger">
+        <br>
+        <button type="submit" id="submit">Place your order</button>
+        <p>Ready to order?</p>
+        <p>Just type in the burger you would like to eat and it will show up in the pick-up area</p>
+    </form>
+ <ul>
 
-  <div class="form-group">
-    <label for="devoured">Ready to order?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Add a burger<br>
-  </div>
+</div>
 
-  <button type="submit">Place Order</button>
-</form>
-
+<div class="orderup">
 <h2>Orders that are ready!</h2>
-<ul>
-  {{#each burger}}
-    {{#if devoured}}
-      {{> burger/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+
+
+<p>Thank you for visiting Eat-Da-Burger!</p> 
+<p>Please come by again soon!</p>
+</div>
