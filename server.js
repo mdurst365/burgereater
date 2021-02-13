@@ -23,7 +23,7 @@ var routes = require("./controllers/burgerController.js");
 app.use(routes);
 
 //Check if the server is listening
-app.listen(PORT, function() {
-  console.log("Server listening on: http://localhost:" + PORT);
-});
+app.listen(PORT, () => {
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
 
