@@ -8,9 +8,9 @@ var burger = {
             });
     },
     //create
-    create: (vols, vals, cb) => {
+    create: (cols, vals, cb) => {
         orm.create("burgers", cols, vals, (res) => {
-                bd(res);
+                cd(res);
             });
     },
    //delete 
