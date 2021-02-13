@@ -1,7 +1,7 @@
 //connect to MySQL
-var MySQL = require("mysql");
+var mysql = require("mysql");
 
-var connection = MySQL.createConnection({
+var connection = mysql.createConnection({
     host: "localhost",
     port: process.env.PORT || 8080,
     user: "root",

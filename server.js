@@ -2,7 +2,7 @@
 var express = require("express");
 var dotenv = require("dotenv");
 
-var port = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080;
 
 var app = express();
 
@@ -24,5 +24,6 @@ app.use(routes);
 
 //Check if the server is listening
 app.listen(PORT, function() {
-    console.log("Server listening on: http://localhost:" + PORT);
-  });
+  console.log("Server listening on: http://localhost:" + PORT);
+});
+
