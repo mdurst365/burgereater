@@ -1,6 +1,4 @@
-INSERT INTO burgers (name) VALUES ('Hamburger');
-INSERT INTO burgers (name) VALUES ('Cheeseburger');
-INSERT INTO burgers (name) VALUES ('McRoyale with Cheese');
-INSERT INTO burgers (name, devoured) VALUES ('Veggie Burger', FALSE);
-INSERT INTO burgers (name, devoured) VALUES ('Everything Burger', FALSE);
-INSERT INTO burgers (name) VALUES ('Pickle Burger');
+USE burgers_db;
+
+INSERT INTO burgers(burger_name, devoured)
+VALUES ('Hamburger', FALSE), ('Cheeseburger', FALSE), ('McRoyale with Cheese', FALSE), ('Veggie Burger', FALSE);
