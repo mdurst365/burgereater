@@ -5,6 +5,10 @@ var router = express.Router();
 var burger = require("../models/burgers.js");
 
 //creating the routes
+router.get('/', (req, res) => {
+  res.render('index');
+})
+
 router.get("/", (req, res) => {
     burger.all(function (data) {
         var hbsObject = {
