@@ -19,11 +19,10 @@ router.get("/", (req, res) => {
 
 //create a burger
 router.post("/api/burgers", (req, res) => {
-    burger.create([
-        "name", "devoured"
-    ], [
-        req.body.name, req.body.devoured
-    ], function (result) {
+    burger.create(
+      ["name", "devoured"], 
+      [req.body.name, req.body.devoured], 
+      (result) => {
         // Send back the ID of the new quote
         res.json({ id: result.insertId });
     });
@@ -34,9 +33,9 @@ router.put("/api/burgers/:id", (req, res) => {
     console.log("condition", condition);
 
 //udpate a burger
-burger.update({
-    devoured: req.body.devoured
-}, condition, (result) => {
+burger.update(
+  {devoured: req.body.devoured}, 
+  condition, (result) => {
     if (result.changedRows === 0) {
         return res.status(404).end();
     } else {
