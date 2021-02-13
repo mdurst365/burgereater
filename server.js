@@ -2,7 +2,7 @@
 var express = require("express");
 var dotenv = require("dotenv");
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 var app = express();
 
@@ -23,6 +23,6 @@ var routes = require("./controllers/burgerController.js");
 app.use(routes);
 
 //Check if the server is listening
-app.listen(PORT, function (){
-    console.log("Server listening on: http://localhost:" + PORT)
-});
+app.listen(PORT, function() {
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
