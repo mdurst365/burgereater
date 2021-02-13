@@ -17,3 +17,10 @@
 </form>
 
 <h2>Orders that are ready!</h2>
+<ul>
+  {{#each burger}}
+    {{#if devoured}}
+      {{> burger/burger-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
