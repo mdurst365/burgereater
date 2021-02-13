@@ -17,7 +17,7 @@ var expressHandlebars = require("express-handlebars");
 app.engine("handlebars", expressHandlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-//routes - note: this does not exist yet
+//routes 
 var routes = require("./controllers/burgerController.js");
 
 app.use(routes);
