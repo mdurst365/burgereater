@@ -49,7 +49,7 @@ burger.update({
 router.delete("/api/burger/:id", (req, res) => {
     var condition = "id = " + req.params.id;
   
-    cat.delete(condition, (result) => {
+    burger.delete(condition, (result) => {
       if (result.affectedRows == 0) {
         return res.status(404).end();
       } else {
