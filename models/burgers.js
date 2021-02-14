@@ -10,8 +10,14 @@ var burger = {
     //create
     create: (cols, vals, cb) => {
         orm.create("burgers", cols, vals, (res) => {
-                cd(res);
+            cb(res);
             });
+    },
+    //update
+    udpate: (colVals, condition, cb) => {
+        orm.update("burgers", colVals, condition, (res) => {
+            cb(res);
+        })
     },
    //delete 
    delete: (condition, cb) => {
