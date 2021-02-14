@@ -4,7 +4,7 @@ $(function () {
   $(".pickup").on("click", function (event) {
       let id = $(this).data("id");
       let newState = $(this).data("newstate");
-
+// change burger state from devoured false to true
       let newBurgerState = {
           devoured: true
       };
