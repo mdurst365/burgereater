@@ -3,26 +3,51 @@
 </div>
 
 <div class="order">
-  
-<h2>May I take your order?</h2>
-
-<form class="create-form">
-
-     <form id="addBurgerForm">
+<form id="addBurgerForm">
         <input type="text" id="add-burger" placeholder="Enter a burger">
         <br>
         <button type="submit" id="submit">Place your order</button>
-        <p>Ready to order?</p>
-        <p>Just type in the burger you would like to eat and it will show up in the pick-up area</p>
+        <p>Type in the burger you would like to eat and it will show up in the pick-up area</p>
     </form>
- <ul>
 
-</div>
+    <div id="burgerToEat">
+        {{#each burgers}}
+        {{#unless devoured}}
+
+        <div class="text">
+            
+            {{burger_name}}
+            <button data-id="{{id}}" class="pickup">Eat it!</button>
+        </div>
+
+        {{/unless}}
+        {{/each}}
+    </div>
+
+    <div id="devouredBurgers">
+        {{#each burgers}}
+        {{#if devoured}}
+
+
+
+        <div class="text">
+            {{burger_name}}
+            <button data-id="{{id}}" class="delete-burger">Throw away the wrapper!</button>
+        </div>
+
+        {{/if}}
+        {{/each}}
+
+
+    </div>
+
+    </div>
 
 <div class="orderup">
 <h2>Orders that are ready!</h2>
-
-
 <p>Thank you for visiting Eat-Da-Burger!</p> 
 <p>Please come by again soon!</p>
+</div>
+ 
+</div>
 </div>
