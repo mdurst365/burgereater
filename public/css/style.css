@@ -4,7 +4,7 @@ body {
 
 .welcome {
   margin: auto;
-  padding: 2%;
+  padding: 1%;
   width: 80%;
   background-color: #3e7a50;
   font-size: 2em;
@@ -15,24 +15,50 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h1 {
+  padding:5%;
+}
+
+button {
+  margin:1%;
+}
+
 h2 {
-  font-size: 2em;
-  text-align: center;
+  font-size: 1.5em;
+}
+
+img {
+  width:35%;
+  float:right;
+  border: solid thin black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+img {
+  width:100%;
+}
 }
 
 .order {
   margin: auto;
-  padding: 2%;
+  padding: 1%;
   width:80%;
   background-color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.orderup {
+.cleanUp {
   margin: auto;
-  padding: 2%;
-  width:80%;
   text-align: center;
-  background-color: #f09d29;
+  background-color: #3e7a50;
+  padding: 1%;
+  width:80%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white;
+  letter-spacing: 2px;
 }
+
+
+
+

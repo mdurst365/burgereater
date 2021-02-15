@@ -1,53 +1,50 @@
-<div class="welcome">
+    <div class="welcome">
+        <img src="/images/burger.jpg" alt="burger">
   <h1>Welcome to Eat the Burger</h1>
+  
 </div>
+    
+    <div class="order">
+        
+        <h2>May I take your order?</h2>
 
-<div class="order">
 <form id="addBurgerForm">
         <input type="text" id="add-burger" placeholder="Enter a burger">
         <br>
-        <button type="submit" id="submit">Place your order</button>
+        <span class="fa fa-plus-circle">&nbsp;</span><button type="submit" id="submit">Place your order</button>
         <p>Type in the burger you would like to eat and it will show up in the pick-up area</p>
     </form>
 
+   
     <div id="burgerToEat">
+         <h2>Ready for pick-up!</h2>
         {{#each burgers}}
         {{#unless devoured}}
 
         <div class="text">
-            
             {{burger_name}}
-            <button data-id="{{id}}" class="pickup">Eat it!</button>
+            <span class="fa fa-minus-circle">&nbsp;</span><button data-id="{{id}}" class="pickup">Eat it!</button>
         </div>
 
         {{/unless}}
         {{/each}}
     </div>
 
+<h2>Please be courteous and throw away your trash</h2>
+
     <div id="devouredBurgers">
         {{#each burgers}}
         {{#if devoured}}
 
-
-
+         
         <div class="text">
             {{burger_name}}
-            <button data-id="{{id}}" class="delete-burger">Throw away the wrapper!</button>
+            <span class="fa fa-trash">&nbsp;</span><button data-id="{{id}}" class="delete-burger">Throw away the wrapper!</button>
         </div>
 
         {{/if}}
         {{/each}}
-
-
     </div>
 
-    </div>
-
-<div class="orderup">
-<h2>Orders that are ready!</h2>
-<p>Thank you for visiting Eat-Da-Burger!</p> 
-<p>Please come by again soon!</p>
 </div>
- 
-</div>
-</div>
+<h2 class="cleanUp">Thank you, please come again!</h2>
