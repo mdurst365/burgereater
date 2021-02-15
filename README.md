@@ -9,3 +9,6 @@ It was developed using the MVC architectural pattern and the user interactions d
 * Express
 * Express-Handlers
 * dotenv
+
+# Demo
+![Demo](https://raw.githubusercontent.com/mdurst365/burgereater/main/public/images/burger_walkthrough_larger.gif)
