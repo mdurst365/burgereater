@@ -1,4 +1,4 @@
-//import ORM 
+// import orm to create functions that will interact with the db
 var orm = require("../config/orm.js");
 
 var burger = {
@@ -24,5 +24,5 @@ var burger = {
     }
 };
 
-//export db functions to controller file
+//export the db functions for the controller
 module.exports = burger;
