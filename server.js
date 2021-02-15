@@ -1,6 +1,6 @@
 //express
 var express = require("express");
-var dotenv = require("dotenv")
+var dotenv = require("dotenv").config();
 var PORT = process.env.PORT || 8080;
 var app = express();
 
