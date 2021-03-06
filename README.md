@@ -11,4 +11,4 @@ It was developed using the MVC architectural pattern and the user interactions d
 * dotenv
 
 # Demo
-![Demo](https://raw.githubusercontent.com/mdurst365/burgereater/main/public/images/burger_walkthrough_larger.gif)
+![Demo](https://raw.githubusercontent.com/mdurst365/react_employee_directory/blob/main/public/React%20App.gif)
